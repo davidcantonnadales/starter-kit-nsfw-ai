@@ -11,12 +11,9 @@ import {
   getStripePayments,
   createCheckoutSession,
 } from "@invertase/firestore-stripe-payments";
+import { logCustomEvent } from "@/lib/analytics";
 
 const SubscriptionPage = () => {
-  useEffect(() => {
-    logCustomEvent("Subscriptions Page Loaded", {});
-  });
-
   const app = useFirebaseApp();
 
   const payments = getStripePayments(app, {

@@ -134,6 +134,12 @@ export const Dashboard: React.FC = () => {
   };
 
   const fetchGenerateData = async (token: string) => {
+    //No tiene generaciones pendientes y además no es VIP
+    if (generationLimit <= 0 && maxGenerationLimit > 0) {
+      setIsLimitModalOpen(true);
+      return;
+    }
+
     setData(null);
     setError(null);
     setFetching(true);
