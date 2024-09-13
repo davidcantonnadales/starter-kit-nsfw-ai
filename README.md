@@ -58,10 +58,13 @@ Necesitas obtener una cuenta en NOVITA.AI https://novita.ai/
 6. Instala las dependencias `npm i` y `npm run dev` para iniciar el proyecto
 7. El sistema de suscripciones con Stripe funciona con la extensión de Firestore https://extensions.dev/extensions/invertase/firestore-stripe-payments
 8. Actualiza `STRIPE_WEBHOOK_SECRET` y `STRIPE_SECRET_KEY` con tus valores
+9. Actualiza las keys de Stream Chat con las tuyas https://getstream.io/chat/
 
 ## Dudas?
 
 Puedes contactar conmigo en Telegram @davidcanton1987
 O por email davidcantonnadales@gmail.com
+
+No es un código perfecto, pero es una buena base¡
 
 **Creado por [David Cantón Nadales](https://www.davidcanton.net)**
