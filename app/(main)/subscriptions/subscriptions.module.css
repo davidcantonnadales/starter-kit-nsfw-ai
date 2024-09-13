@@ -1,0 +1,125 @@
+.container {
+  background-color: #f7fafc;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: #1a202c;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardTitle {
+  color: #1a202c;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  color: #718096;
+  margin-bottom: 10px;
+}
+
+.divider {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e2e8f0;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+}
+
+.priceValue {
+  color: #1a202c;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.pricePeriod {
+  color: #718096;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.featureItem::before {
+  content: "✔";
+  color: #38a169;
+  margin-right: 10px;
+}
+
+.button {
+  margin-top: auto;
+  padding: 10px;
+  width: 100%;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.button.outlined {
+  background-color: transparent;
+  border: 2px solid #0070f3;
+  color: #0070f3;
+}
+
+.button.outlined:hover {
+  background-color: #0070f3;
+  color: white;
+}

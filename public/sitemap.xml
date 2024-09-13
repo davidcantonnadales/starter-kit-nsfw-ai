@@ -1,0 +1,59 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://aixa.app/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aixa.app/login</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aixa.app/register</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aixa.app/home-2</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Feature Pages -->
+  <url>
+    <loc>https://aixa.app/#how</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aixa.app/#why</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aixa.app/#examples</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Community Pages -->
+  <url>
+    <loc>https://aixa.app/community-creations</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aixa.app/user-gallery</loc>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Subscription & Pricing -->
+  <url>
+    <loc>https://aixa.app/app/subscriptions</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://aixa.app/terms-and-conditions</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aixa.app/privacy-policy</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>
