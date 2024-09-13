@@ -9,7 +9,6 @@ export default async function handler(
   const api_key = process.env.CHAT_PROJECT_ID;
   const api_secret = process.env.CHAT_PROJECT_KEY;
 
-  console.log("KEYS", api_key, api_secret);
   const { user_id } = req.body;
 
   if (!api_key || !api_secret) {

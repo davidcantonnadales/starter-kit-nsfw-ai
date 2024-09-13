@@ -39,6 +39,10 @@ No olvides de actualizar tus id de productos en pages/api/stripe/webhook.ts
 
 Puedes ver este proyecto funcionando en producción en www.aixa.app
 
+## Documentación NOVITA.AI
+
+https://novita.ai/docs/get-started/quickstart.html
+
 **¡Espero que os guste!**
 
 ## Configuración

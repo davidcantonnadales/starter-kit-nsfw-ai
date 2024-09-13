@@ -120,10 +120,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     const taskId = responseData.task_id;
 
-    console.log(taskId);
-
-    // Download the image and convert to base64
-
     let apiResponse: GenerateResponse = {
       id: taskId,
       status: "TASK_STATUS_PROCESSING",

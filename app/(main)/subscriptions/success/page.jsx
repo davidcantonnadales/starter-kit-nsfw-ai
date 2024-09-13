@@ -24,8 +24,6 @@ const SuccessPage = () => {
     if (!data) return;
 
     onCurrentUserSubscriptionUpdate(payments, (snapshot) => {
-      console.log(snapshot.changes);
-
       for (const change of snapshot.changes) {
         if (change.type === "added") {
           console.log(

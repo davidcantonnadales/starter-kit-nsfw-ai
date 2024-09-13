@@ -107,8 +107,6 @@ export const Dashboard: React.FC = () => {
           },
         });
 
-        console.log("previus creaetoins", response.data);
-
         setPreviousCreations(response.data);
       } catch (error) {
         console.error("Error fetching previous creations:", error);
@@ -136,11 +134,6 @@ export const Dashboard: React.FC = () => {
   };
 
   const fetchGenerateData = async (token: string) => {
-    if (generationLimit <= 0) {
-      setIsLimitModalOpen(true);
-      return;
-    }
-
     setData(null);
     setError(null);
     setFetching(true);
@@ -179,7 +172,6 @@ export const Dashboard: React.FC = () => {
         return;
       }
 
-      console.log("API RESPONSE", response.data);
       setData(apiResponse);
       pollStatus(apiResponse.id, token);
     } catch (error) {
@@ -198,17 +190,11 @@ export const Dashboard: React.FC = () => {
     token: string,
     base64Image: string
   ) => {
-    // if (generationLimit <= 0) {
-    //   setIsLimitModalOpen(true);
-    //   return;
-    // }
-
     setData(null);
     setError(null);
     setFetching(true);
 
     try {
-      console.log("img2img");
       const response = await axios.post(
         "/api/img2img",
         {
@@ -241,7 +227,6 @@ export const Dashboard: React.FC = () => {
         return;
       }
 
-      console.log("API RESPONSE", response.data);
       setData(apiResponse);
       pollStatus(apiResponse.id, token);
     } catch (error) {

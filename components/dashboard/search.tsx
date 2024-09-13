@@ -125,7 +125,6 @@ const SearchComponent: React.FC<SearchComponentProps> = ({
   const [image, setImage] = useState<string | null>(null);
 
   const handleAdd = (chipToAdd: { name: string; value: string }) => {
-    console.log(chipToAdd);
     handleAddNegativePrompt(chipToAdd);
     setSearchValue("");
     setShowDropdown(false);

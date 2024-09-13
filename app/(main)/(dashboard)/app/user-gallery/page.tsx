@@ -42,8 +42,6 @@ const UserGallery = () => {
             }
           );
 
-          console.log("previus creaetoins", response.data);
-
           setCreations(response.data);
         } catch (error) {
           console.error("Error fetching user creations:", error);

@@ -36,7 +36,6 @@ export const RoleProvider: React.FC<RoleProviderProps> = ({ children }) => {
   useEffect(() => {
     if (data != null) {
       getCustomClaimRole(data).then((role) => {
-        console.log("Saving", role, data.uid);
         setRole(role);
         setUserId(data.uid);
       });
